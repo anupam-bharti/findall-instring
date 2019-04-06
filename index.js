@@ -30,7 +30,7 @@ function findme(haystack, tosearch, caseSensitive){
     let needle = tosearch[key];    
     var re = new RegExp(needle, checkCase);
     
-    var matched = str.match(re);
+    var matched = haystack.match(re);
     
     if(matched){
       
