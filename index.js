@@ -7,7 +7,7 @@
  */
 function findme(haystack, tosearch, caseSensitive){
   
-  let checkCase = (caseSensitive == 0) ? 'gi' : 'g';  
+  let checkCase = (caseSensitive == 1) ? 'g' : 'gi';  
   let output = {
     'count':[],
     'indexes':[],
