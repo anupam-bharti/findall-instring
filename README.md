@@ -1,21 +1,26 @@
-# findall-instring
+## Install
 
-String as first argument, Accept array of string as second argument, Search in a string and find all occurance count with indexes
+Install with [npm](https://www.npmjs.com/):
 
-For Eg:
+```sh
+$ npm install @anupam.bharti/findinstring
+```
 
-var findme = require('./index');
 
-let toSearchArr = ['a', 'e', 'o', 'i', 'u'];
+## Usage
 
+```js
+const findme = require('@anupam.bharti/findinstring');
+
+var toSearchArr = ['A', 'B', 'o', 'i', 'u'];
 let str = 'This is Sample string to be searched';
 
-let res = findme(str, toSearchArr); // third argument optional for case sensitive, by default case in-sensitive, pass 1 for case sensitive searches
+let res = findme(str, toSearchArr, 1);
 
 console.log(res);
 
-
 Will Output : 
+
 { 
   count: [ a: 2, e: 4, o: 1, i: 3 ],
   indexes:
@@ -24,3 +29,5 @@ Will Output :
      o: [ 23 ],
      i: [ 2, 5, 18 ] ] 
 }
+
+```
