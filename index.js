@@ -64,4 +64,4 @@ function _getAllIndexes(string, val, caseSensitive) {
     return indexes;
 }
 
-module.exports = findmeEveryWhere;
+module.exports = findme;
